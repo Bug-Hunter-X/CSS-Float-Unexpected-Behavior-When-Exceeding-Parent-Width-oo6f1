@@ -1,0 +1,15 @@
+To avoid this issue, use flexbox or grid layout instead of floats. Here's a possible solution using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Avoid unexpected width increases from padding and border */
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap onto multiple lines */
+}
+```
+
+Flexbox offers better control over element placement and prevents many of the unexpected behaviors associated with floats.
