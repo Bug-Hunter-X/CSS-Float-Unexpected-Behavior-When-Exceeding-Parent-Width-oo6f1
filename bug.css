@@ -1,0 +1,10 @@
+The following CSS rule may cause unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue arises when the total width of the floated `div` elements exceeds the width of their parent container.  In this case, some browsers might introduce extra space or unexpected wrapping behavior.
